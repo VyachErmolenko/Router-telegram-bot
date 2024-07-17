@@ -1,11 +1,12 @@
 import telnetlib, time
 
 def get():
-	telnet = telnetlib.Telnet('192.168.0.1')
+	telnet = telnetlib.Telnet('178.167.80.167 23')
 	time.sleep(0.1)
-	telnet.write(b'login\n')
+	telnet.write(b'operator')
 	time.sleep(0.1)
-	telnet.write(b'password\n')
+	telnet.write(b'MfUa2024')
+	time.sleep(0.1)
 	time.sleep(0.1)
 	telnet.write(b'cd /proc/net/\n')
 	time.sleep(0.1)
